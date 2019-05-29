@@ -1,10 +1,14 @@
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+var bodyParser = require('body-parser');
 // creating a application using express
 const app = express();
 const request = require("request");
 const port = process.env.PORT || 3001;
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+var jsonParser = bodyParser.json();
 
 // defining public and views directory path if name other than views
 const publicDirectoryPath = path.join(__dirname,"../public");
