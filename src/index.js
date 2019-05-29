@@ -4,6 +4,7 @@ const hbs = require("hbs");
 // creating a application using express
 const app = express();
 const request = require("request");
+const port = process.env.PORT || 3001;
 
 // defining public and views directory path if name other than views
 const publicDirectoryPath = path.join(__dirname,"../public");
@@ -81,6 +82,6 @@ app.get("*",(req,res)=>{
   });
 });
 
-app.listen("3001",()=>{
+app.listen(port,()=>{
   console.log("server is started");
 });
