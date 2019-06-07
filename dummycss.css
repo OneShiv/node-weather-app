@@ -1,0 +1,28 @@
+body {
+    box-sizing:border-box;
+}
+
+ul{
+    list-style-type:none;
+    display:grid;
+    background-color:antiquewhite;
+    height:50px;
+    grid-template-columns:10% 10% ; 
+    padding:0px;
+}
+
+ul li{
+    align-content:center;
+    margin-left:5px;
+    display:grid;
+    height:30px;
+    border-bottom:1px solid brown;
+    min-width:100px;
+    max-width:150px;
+}
+
+ul li a{
+    text-decoration:none;
+    color:black;
+    text-align:center;
+}
